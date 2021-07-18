@@ -57,30 +57,7 @@
         }
     </script>
 </head>
-<?php
-if (isset($_POST['btn'])) {
-    # code...
 
-                $to = "mostafanawam44@gmail.com";
-                $subject = "This is subject";
-                
-                $message = "<b>This is HTML message.</b>";
-                $message .= "<h1>This is headline.</h1>";
-                
-                $header = "From:mostafanawam44@gmail.com \r\n";
-                //$header .= "Cc:afgh@somedomain.com \r\n";
-                $header .= "MIME-Version: 1.0\r\n";
-                $header .= "Content-type: text/html\r\n";
-                
-                $retval = mail ($to,$subject,$message,$header);
-                
-                if( $retval == true ) {
-                    echo "Message sent successfully...";
-                }else {
-                    echo "Message could not be sent...";
-                }
-            }
-?>
 <body id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg   fixed-top" id="mainNav">
@@ -108,7 +85,7 @@ if (isset($_POST['btn'])) {
         <div class="container">
 
             <div class="text-center">
-                <img width="220rem" height="190rem" src="assets/images/2.png" alt="">
+                <img width="220rem" height="190rem" class="rounded-circle" src="assets/profile/p3.png" alt="">
             </div>
 
             <br>
@@ -366,7 +343,7 @@ if (isset($_POST['btn'])) {
                 </div>
                 <div class="text-center">
                     <div id="success"></div>
-                    <button class="btn btnsend btn-xl text-uppercase" name="btn" id="sendMessageButton" type="submit" onclick="sendmail()">Send Message</button>
+                    <button class="btn btnsend btn-xl text-uppercase" name="btn" id="sendMessageButton" type="button" onclick="sendmail()">Send Message</button>
                 </div>
             </form>
         </div>
