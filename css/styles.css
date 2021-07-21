@@ -10576,3 +10576,102 @@ color:#FFD700;
 .test{
   display: none;
 }
+
+span {
+  font-weight: bolder;
+}
+.img-projects{
+  border-top-left-radius:20px ;
+  border-top-right-radius:20px ;
+}
+.bottom-img-proj{
+  border-bottom-left-radius:20px ;
+  border-bottom-right-radius:20px ;
+}
+
+.animateheader {/* Welcome To My Website! animation*/
+animation-duration: 2s;
+animation-name: slidein;
+animation-iteration-count: 1;
+}
+
+@keyframes slidein {
+0% {
+margin-left: -300px;
+}
+/*50% {
+margin-left: 50%;
+}*/
+100% {
+margin-left: 0%;
+}
+}
+
+.animateheader2 {/* Iam mostafa nawam animation*/
+animation-duration: 2s;
+animation-name: slidein2;
+animation-iteration-count: 1;
+}
+
+@keyframes slidein2 {
+0% {
+margin-left: 50%;
+}
+/*50% {
+margin-left: -50%;
+}*/
+100% {
+margin-left: 0%;
+}
+}
+
+/*.img-animate{
+  animation-duration: 2s;
+animation-name: slidein3;
+animation-iteration-count: 1;
+}
+@keyframes slidein3 {
+  0% {
+  margin-bottom: 300px;
+  }
+  /*50% {
+  margin-left: -300px;
+  }
+  100% {
+  margin-bottom: 0%;
+  }
+  }*/
+
+  .img-animate{
+    animation-duration: 2s;
+  animation-name: slidein3;
+  animation-iteration-count: 1;
+  }
+  @keyframes slidein3 {
+    0% {
+    margin-left: 300px;
+    }
+    /*50% {
+    margin-left: -300px;
+    }*/
+    100% {
+    margin-left: 0%;
+    }
+    }
+
+    .btn-animate{
+      animation-duration: 2s;
+    animation-name: slidein4;
+    animation-iteration-count: 1;
+    }
+    @keyframes slidein4 {
+      0% {
+      margin-left: -300px;
+      }
+      /*50% {
+      margin-left: -300px;
+      }*/
+      100% {
+      margin-left: 0%;
+      }
+      }
