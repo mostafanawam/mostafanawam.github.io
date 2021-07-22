@@ -82,10 +82,10 @@ function sendmail() {
 }
 
 document.addEventListener("scroll", function() {
+
     var element = document.querySelector('#about'); //when rach the about serction
     var position = element.getBoundingClientRect();
-
-    if (position.top + 100 <= window.innerHeight) {
+    if (position.top <= window.innerHeight) {
         $("#title1").addClass("animateheader");
         $("#title2").addClass("animateheader2");
         $("#img-about").addClass("flip-scale-down-diag-2");
@@ -96,7 +96,7 @@ document.addEventListener("scroll", function() {
 
     var element = document.querySelector('#title-skills'); //when reach the skills section
     var position = element.getBoundingClientRect();
-    if (position.top + 100 <= window.innerHeight) {
+    if (position.top <= window.innerHeight) {
         $('#title-skills').addClass("animateheader");
         $('#piechart').addClass("animateheader");
         $('#piechart2').addClass("animateheader2");
@@ -105,7 +105,7 @@ document.addEventListener("scroll", function() {
 
     var element = document.querySelector('#services'); //when reach the services section
     var position = element.getBoundingClientRect();
-    if (position.top + 100 <= window.innerHeight) {
+    if (position.top <= window.innerHeight) {
         $('#serv-title').addClass("animateheader");
         $('#serv-subtitle').addClass("animateheader2");
         $('#serv').addClass("show-services");
@@ -114,7 +114,7 @@ document.addEventListener("scroll", function() {
 
     var element = document.querySelector('#portfolio'); //when reach the project section
     var position = element.getBoundingClientRect();
-    if (position.top + 100 <= window.innerHeight) {
+    if (position.top <= window.innerHeight) {
         $('#title-proj').addClass("animateheader");
         $('#subtitle-proj').addClass("animateheader2");
         $('.proj-list').addClass("show-services");
@@ -122,26 +122,11 @@ document.addEventListener("scroll", function() {
 
     var element = document.querySelector('#contact'); //when reach the project section
     var position = element.getBoundingClientRect();
-    if (position.top + 100 <= window.innerHeight) {
+    if (position.top <= window.innerHeight) {
         $('#title-cont').addClass("animateheader");
         $('#subtitle-cont').addClass("animateheader2");
         $('#form-con').addClass("show-services");
         $('#sendMessageButton').addClass("animateheader");
-
     }
-
-
-
-
-    /*var height = $(document).scrollTop();
-    if (height >= 260 && height <= 270) { //reach about section  
-    }
-    if (height >= 280 && height <= 300) { //reach image and description   
-    }
-    if (height >= 750 && height <= 770) { //reach my skillss
-    }
-    if (height >= 1150 && height <= 1170) { //reach services
-    }*/
-
 
 });
