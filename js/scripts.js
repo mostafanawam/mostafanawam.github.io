@@ -88,18 +88,19 @@ document.addEventListener("scroll", function() {
     if (position.top <= window.innerHeight) {
         $("#title1").addClass("animateheader");
         $("#title2").addClass("animateheader2");
-        $("#img-about").addClass("flip-scale-down-diag-2");
-        $(".txt-about").addClass("text-about-animate");
-        $(".btn-about1").addClass("animateheader");
-        $(".btn-about2").addClass("animateheader2");
+        $("#img-about").addClass("animateheader");
+        $("#text-about").addClass("animateheader2");
+        $("pre").addClass("animateheader2");
+        $(".btn-about1").addClass("animateheader2");
+
     }
 
     var element = document.querySelector('#title-skills'); //when reach the skills section
     var position = element.getBoundingClientRect();
     if (position.top <= window.innerHeight) {
         $('#title-skills').addClass("animateheader");
-        $('#piechart').addClass("animateheader");
-        $('#piechart2').addClass("animateheader2");
+        $('#piechart').addClass("show-services");
+        $('#piechart2').addClass("show-services");
     }
 
 
