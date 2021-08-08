@@ -83,14 +83,14 @@ function sendmail() {
 
 document.addEventListener("scroll", function() {
 
-    var element = document.querySelector('#about'); //when rach the about serction
+    var element = document.querySelector('#about'); //when rach the about section
     var position = element.getBoundingClientRect();
     if (position.top <= window.innerHeight) {
         $("#title1").addClass("animateheader");
         $("#title2").addClass("animateheader2");
-        $("#img-about").addClass("animateheader");
-        $("#text-about").addClass("animateheader2");
-        $("pre").addClass("animateheader2");
+        $("#img-about").addClass("show-services");
+        $("#text-about").addClass("show-services");
+        $("pre").addClass("show-services");
         $(".btn-about1").addClass("animateheader2");
 
     }

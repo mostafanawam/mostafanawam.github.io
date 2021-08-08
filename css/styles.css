@@ -10761,7 +10761,7 @@ span {
 
 .animateheader {
     /* Welcome To My Website! animation*/
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-name: slidein;
     animation-iteration-count: 1;
 }
@@ -10777,7 +10777,7 @@ span {
 
 .animateheader2 {
     /* Iam mostafa nawam animation*/
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-name: slidein2;
     animation-iteration-count: 1;
 }
@@ -10865,7 +10865,7 @@ span {
 }
 
 .show-services {
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-name: slideop;
     animation-iteration-count: 1;
 }
