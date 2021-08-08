@@ -99,8 +99,8 @@ document.addEventListener("scroll", function() {
     var position = element.getBoundingClientRect();
     if (position.top <= window.innerHeight) {
         $('#title-skills').addClass("animateheader");
-        $('#piechart').addClass("show-services");
-        $('#piechart2').addClass("show-services");
+        $('#skillslist').addClass("show-services");
+        //$('#piechart2').addClass("show-services");
     }
 
 
