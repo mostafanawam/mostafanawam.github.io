@@ -5966,9 +5966,13 @@ a.close.disabled {
 }
 
 .modal-dialog-scrollable .modal-body {
+
     overflow-y: auto;
 }
 
+.modal-body p{
+    color:black;
+}
 .modal-dialog-centered {
     display: flex;
     align-items: center;
