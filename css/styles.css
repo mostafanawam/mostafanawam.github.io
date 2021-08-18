@@ -6904,6 +6904,7 @@ button.bg-dark:focus {
 }
 
 .rounded-circle {
+    border:3px solid rgb(25, 29, 40);
     border-radius: 50% !important;
 }
 
