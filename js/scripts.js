@@ -66,7 +66,7 @@ function sendmail() {
             $('#alertmsg').html('Please fill message');
         } else $('#alertmsg').html('');
         if (phone == '') {
-            $('#alertphone').html('Please your fill your phone');
+            $('#alertphone').html('Please fill your phone');
         } else $('#alertphone').html('');
         if (name == '') {
             $('#alertname').html('Please fill your name');
@@ -132,6 +132,64 @@ document.addEventListener("scroll", function() {
 
 });
 
+/*
+  --wide: #161922;
+    --wide2: rgb(25, 29, 40);
+    --gold: #FFD700;
+    --white: #fff;
+*/
+function check(){
+    if($('#ThemeToggle').is(':checked')) {//dark theme
+        document.getElementById("landingpage").style.background = "rgb(25, 29, 40)";
+        document.getElementById("about").style.background = "#161922";
+        document.getElementById("services").style.background = "rgb(25, 29, 40)";
+        document.getElementById("portfolio").style.background = "#161922";
+        document.getElementById("contact").style.background = "rgb(25, 29, 40)";
 
+        document.getElementById("welcomehead").style.color = "white";
+
+        $(".btnCV").addClass("btninfo");
+        $(".btnCV").removeClass("btninfoDark");
+
+        $('.page-section h3.section-subheading').css('color','white');
+
+        document.getElementById("text-about").style.color = "white";
+        $('.about-info pre,span').css('color','white');
+
+        $('.txtserv').css('color','white');
+
+        $(".fillinfo").removeClass("border-dark");
+    }
+    else{//light theme
+        document.getElementById("landingpage").style.background = "#fffefc";
+        document.getElementById("about").style.background = "#fffefc";
+        document.getElementById("services").style.background = "#fffefc";
+        document.getElementById("portfolio").style.background = "#fffefc";
+        document.getElementById("contact").style.background = "#fffefc";
+
+        document.getElementById("mainNav").style.background = "rgb(25, 29, 40)";
+
+        document.getElementById("welcomehead").style.color = "rgb(25, 29, 40)";
+
+        $(".btnCV").removeClass("btninfo");
+        $(".btnCV").addClass("btninfoDark");
+
+        
+        $('.page-section h3.section-subheading').css('color','rgb(25, 29, 40)');
+       
+        document.getElementById("text-about").style.color = "rgb(25, 29, 40)";
+        $('.about-info pre,span').css('color','rgb(25, 29, 40)');
+
+        
+        $('.txtserv').css('color','rgb(25, 29, 40)');
+        
+        //$(".servesub").removeClass("text-muted");
+        $(".servesub").css('color','#161922');
+
+        $(".fillinfo").addClass("border-dark");
+        
+        
+    }
+}
 
 
