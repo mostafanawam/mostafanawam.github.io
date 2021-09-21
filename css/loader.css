@@ -19,7 +19,7 @@
   font-size: 100px;
   text-align: center;
   transform-origin: bottom center;
-  animation: 3s rotate infinite;
+  animation: 1s rotate infinite;
   opacity: 0;
 }
 .loader1 span {

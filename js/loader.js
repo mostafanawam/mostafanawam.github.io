@@ -12,7 +12,7 @@ $(document).ready(function () {
   
       changeImage(counter);
       counter++;
-    }, 3000);
+    }, 1000);
   
     // Set the percentage off
     loading();
@@ -20,16 +20,12 @@ $(document).ready(function () {
   
   function changeImage(counter) {
     var images = [
-       '<i class="devicon-php-plain colored"></i>',
-       '<i class="devicon-laravel-plain-wordmark colored"></i>',
-      '<i class="devicon-bootstrap-plain-wordmark colored"></i>',
-      '<i class="devicon-jquery-plain-wordmark colored"></i>',
-      '<i class="devicon-javascript-plain colored"></i>',
       '<i class="devicon-css3-plain-wordmark colored"></i>',
-      '<i class="devicon-mysql-plain-wordmark colored"></i>',
-      '<i class="devicon-c-plain-wordmark colored"></i>',
-      '<i class="devicon-android-plain-wordmark colored"></i>',
-  
+      '<i class="devicon-javascript-plain colored"></i>',
+      '<i class="devicon-jquery-plain-wordmark colored"></i>',
+      '<i class="devicon-bootstrap-plain-wordmark colored"></i>',  
+       '<i class="devicon-php-plain colored"></i>',
+       '<i class="devicon-laravel-plain-wordmark colored"></i>',     
     ];
   
     $(".loader .image").html("" + images[counter] + "");
@@ -44,10 +40,11 @@ $(document).ready(function () {
         $(".loader span").html(num + "%");
   
         if (num == 100) {
-          loading();
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("myDiv").style.display = "block";
         }
         num++;
-      }, i * 120);
+      }, i * 65);
     }
   }
   
