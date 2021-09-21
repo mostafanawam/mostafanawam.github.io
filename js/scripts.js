@@ -121,7 +121,7 @@ document.addEventListener("scroll", function() {
         $('.proj-list').addClass("show-services");
     }
 
-    var element = document.querySelector('#contact'); //when reach the project section
+    var element = document.querySelector('#contact'); //when reach the contact section
     var position = element.getBoundingClientRect();
     if (position.top <= window.innerHeight) {
         $('#title-cont').addClass("animateheader");
@@ -193,3 +193,7 @@ function check(){
 }
 
 
+
+
+
+  
