@@ -18,18 +18,7 @@ $(document).ready(function () {
     loading();
   });
   
-  function changeImage(counter) {
-    var images = [
-      '<i class="devicon-css3-plain-wordmark colored"></i>',
-      '<i class="devicon-javascript-plain colored"></i>',
-      '<i class="devicon-jquery-plain-wordmark colored"></i>',
-      '<i class="devicon-bootstrap-plain-wordmark colored"></i>',  
-       '<i class="devicon-php-plain colored"></i>',
-       '<i class="devicon-laravel-plain-wordmark colored"></i>',     
-    ];
-  
-    $(".loader .image").html("" + images[counter] + "");
-  }
+
 
   function loading() {
    
@@ -37,7 +26,7 @@ $(document).ready(function () {
   
     for (i = 0 ; i <= 100 ; i++) {
       setTimeout(function () {
-        $(".loader span").html(num + "%");
+        $("#counter").html(num + "%");
   
         if (num == 100) {
           document.getElementById("loader").style.display = "none";
