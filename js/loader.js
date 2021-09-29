@@ -26,14 +26,14 @@ $(document).ready(function () {
   
     for (i = 0 ; i <= 100 ; i++) {
       setTimeout(function () {
-        $("#counter").html(num + "%");
+       
   
         if (num == 100) {
           document.getElementById("loader").style.display = "none";
           document.getElementById("myDiv").style.display = "block";
         }
         num++;
-      }, i * 65);
+      }, i * 20);
     }
   }
   
