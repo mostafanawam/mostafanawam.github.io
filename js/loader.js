@@ -10,7 +10,7 @@ $(document).ready(function () {
         counter = 0;
       }
   
-      changeImage(counter);
+      
       counter++;
     }, 1000);
   
