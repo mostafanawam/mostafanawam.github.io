@@ -81,6 +81,9 @@ function sendmail() {
 
 }
 
+	
+	
+	
 document.addEventListener("scroll", function() {
 
     var element = document.querySelector('#about'); //when rach the about section
