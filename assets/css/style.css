@@ -307,6 +307,18 @@ h6 {
     color: #149ddd;
 }
 
+.btn-contact {
+    border: 2px solid #149ddd;
+    color: #149ddd;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.btn-contact:hover {
+    background-color: #149ddd;
+    color: white;
+}
+
 @media (min-width: 1024px) {
     #hero {
         background-attachment: fixed;
@@ -566,6 +578,7 @@ section {
 
 .portfolio .portfolio-item {
     margin-bottom: 30px;
+    box-shadow: #173b6c;
 }
 
 .portfolio #portfolio-flters {
